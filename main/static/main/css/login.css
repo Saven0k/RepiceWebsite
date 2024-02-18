@@ -78,53 +78,16 @@
     margin-right: auto;
 }
 
-.title-page {
-    margin-bottom: 30px;
-}
+.text-b {
+    font-size: 12px;
 
-.cart {
-    width: 500px;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    border: 1px solid #4b4a4a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 15px;
-
-    .img-cart {
-        max-width: 400px;
-    }
-
-    .title-cart {
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .type-food {
+    .text-b-a {
         text-decoration: none;
-        color: #6e3232;
+        color: blue;
+        
     }
-
-    .others-to-cart {
-        background-color: #bebbbb;
-        flex-direction: row;
-    }
-
-    .author {
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .time-to-cook, .ingredients{
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
 }
+
 
 @media screen and (max-width: 506px ){
     .center {
@@ -132,22 +95,6 @@
         
         .title-page {
             margin-bottom: 15px;
-        }
-    }
-    .cart {
-        width: 300px;
-        padding-top: 15px;
-        gap: 10px;
-
-        .img-cart {
-            width: 300px;
-        }
-
-        .author, .time-to-cook, .ingredients {
-            font-size: 12px;
-        }
-        .others-to-cart {
-            font-size: 10px;
         }
     }
 }

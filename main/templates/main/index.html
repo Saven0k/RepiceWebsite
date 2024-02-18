@@ -18,6 +18,7 @@
             <div class="menu">
                 <a class='a' href="{% url 'add_recipe' %}">Записать рецепт</a>
                 <a class='a' href="{% url 'login' %}">Войти</a>
+
             </div>
         </div>
     </header>
@@ -44,6 +45,11 @@
                 </div>
                 <div class="ingredients">
                     10 Ингридиентов
+                </div>
+                <div class="b-t">
+                    <button class="b-t-cart" action="{% url 'recipe' %}">
+                        <a class='a-b' href="{% url 'recipe' %}">Подробнее</a>
+                    </button>
                 </div>
             </div>
 
