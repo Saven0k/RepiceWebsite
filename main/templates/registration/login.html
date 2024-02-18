@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "main/css/login.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left-top">
+            <div  class="company-name">
+                <h3><a class='head-title' href="#">Рецептики</a></h3>
+            </div>
+        </div>
+        <div class="right-top">
+            <div class="menu">
+                <a class='a' href="{% url 'add_recipe' %}">Записать рецепт</a>
+                <a class='a' href="{% url 'login' %}">Войти</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="center">
+            <h1>Вход</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="left-bot">
+            <div class="phone">
+                Наш телефон: 8-999-999-99-99
+            </div>
+            <div class="adress">
+                Адрес: Кузькин дом 5 к1 12
+            </div>
+            <a class='a' href="./add_recipe.html">Записать рецепт</a>
+            <a class='a' href="./login.html">Войти</a>
+            <a class='a' href="./registration.html">Зарегестрироваться</a>
+        </div>   
+        <div class="right-bot">
+            <div class="company-name">
+                <h3>Рецептики</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
